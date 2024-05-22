@@ -43,9 +43,9 @@ public class Chip : MonoBehaviour
 
     private void InitializeSimulationFrame()
     {
-        if (m_lastSimulatedFrame != Simulation.simulationFrame)
+        if (m_lastSimulationInitializeFrame != Simulation.simulationFrame)
         {
-            m_lastSimulatedFrame = Simulation.simulationFrame;
+            m_lastSimulationInitializeFrame = Simulation.simulationFrame;
             ProcessUnconnectedInputsAndCycle();
         }
     }
