@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEditor;
+using CircuitSimulation.Core;
 using CircuitSimulation.Utilities;
 
 namespace CircuitSimulation.EditorInspector

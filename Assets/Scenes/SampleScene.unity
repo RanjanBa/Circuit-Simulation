@@ -177,7 +177,7 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.5
+    x: 0.501368
     y: 0.5
     width: 0
     height: 0
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 2021250367}
   - component: {fileID: 2021250368}
   m_Layer: 0
-  m_Name: ProjectManager
+  m_Name: Project Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

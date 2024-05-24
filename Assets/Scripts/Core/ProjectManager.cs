@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CircuitSimulation
+namespace CircuitSimulation.Core
 {
     public class ProjectManager : MonoBehaviour
     {
