@@ -16,9 +16,10 @@ namespace CircuitSimulation.Core
         public ReadOnlyCollection<Pin> InputPins { get; private set; }
         public ReadOnlyCollection<Pin> OutputPins { get; private set; }
         public ReadOnlyCollection<Pin> AllPins { get; private set; }
-        public Vector2 Size { get; private set; }
         public int ID { get; private set; }
 
+        public Vector2 Size { get; protected set; }
+        
         private Dictionary<int, Pin> m_pinsByID;
 
         private void Initialize(ChipDescription _description, int _id)
@@ -43,16 +44,6 @@ namespace CircuitSimulation.Core
             {
                 m_pinsByID.Add(_pin.ID, _pin);
             }
-        }
-
-        protected Point ToPoint(Vector2 _p)
-        {
-            return new Point(_p.x, _p.y);
-        }
-
-        public Vector2 ToVector(Point _p)
-        {
-            return new Vector2(_p.x, _p.y);
         }
 
         public Pin GetPinByID(int _id)
@@ -101,6 +92,6 @@ namespace CircuitSimulation.Core
 
         public virtual void SetHighlightState(bool _isHighlighted) { }
 
-        public virtual void NotifyMove() { }
+        public virtual void NotifyMoved() { }
     }
 }

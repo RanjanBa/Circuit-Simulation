@@ -24,4 +24,14 @@ public static class VectorUtility
 
         return _vector2s;
     }
+
+    public static Vector3 WithZ(this Vector3 _vec, float _z)
+    {
+        return new Vector3(_vec.x, _vec.y, _z);
+    }
+
+    public static Vector3 WithZ(this Vector2 _vec, float _z)
+    {
+        return new Vector3(_vec.x, _vec.y, _z);
+    }
 }
