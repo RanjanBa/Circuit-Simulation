@@ -1,0 +1,34 @@
+{
+    "name": "ChipCreatorActions",
+    "maps": [
+        {
+            "name": "Action map",
+            "id": "91c8bfa0-98e4-45f5-83b0-36af714c8ec1",
+            "actions": [
+                {
+                    "name": "Toggle Pin Display Name",
+                    "type": "Button",
+                    "id": "648fc816-1999-49c3-984e-50d3d271f431",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a0a07af0-6c78-4b49-9971-509559dabc05",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Toggle Pin Display Name",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
