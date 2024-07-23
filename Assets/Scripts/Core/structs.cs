@@ -57,4 +57,16 @@ namespace CircuitSimulation.Core
         public float positionY;
         public string colorThemeName;
     }
+
+    [System.Serializable]
+    public struct ChipOverride
+    {
+        public string chipName;
+        public BaseChip prefab;
+
+        public bool IsValidMatch(string name)
+        {
+            return string.Equals(name, chipName, System.StringComparison.OrdinalIgnoreCase) && prefab != null;
+        }
+    }
 }

@@ -44,7 +44,7 @@ namespace CircuitSimulation.Core
         [SerializeField]
         private Color m_backgroundColor;
 
-        private Camera m_camera;
+        // private Camera m_camera;
         private bool m_isNeedUpdate;
 
         public event Action workAreaResized;

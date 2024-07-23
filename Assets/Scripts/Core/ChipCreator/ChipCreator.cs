@@ -25,5 +25,7 @@ namespace CircuitSimulation.Core
         public Wire WireUnderMouse { get; private set; }
 
         public ChipDescription LastSavedDescription { get; private set; }
+
+        public Wire WireUnderMouse => WirePlacer.WireUnderMouse;
     }
 }
