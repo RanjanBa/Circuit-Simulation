@@ -13,9 +13,12 @@ namespace CircuitSimulation
             if(File.Exists(path)) {
                 using(StreamReader reader = new(path)) {
                     string saveString = reader.ReadToEnd();
-                    // _projectSettings = JsonConvert
+                    _projectSettings = JsonConvert.De
+                    return true;
                 }
             }
+
+            return false;
         }
     }
 }

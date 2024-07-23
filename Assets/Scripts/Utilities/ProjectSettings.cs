@@ -27,5 +27,9 @@ namespace CircuitSimulation.Utilities
 
             Save();
         }
+
+        public void Save() {
+            ProjectSettingsLoader.Save
+        }
     }
 }

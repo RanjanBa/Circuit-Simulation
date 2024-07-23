@@ -22,10 +22,10 @@ namespace CircuitSimulation.Core
         public WorkArea WorkArea { get; private set; }
         public BaseChip ChipUnderMouse { get; private set; }
         public Pin PinUnderMouse { get; private set; }
-        public Wire WireUnderMouse { get; private set; }
-
         public ChipDescription LastSavedDescription { get; private set; }
 
+        public ProjectSettings settings;
         public Wire WireUnderMouse => WirePlacer.WireUnderMouse;
+        public string ProjectName => Sett
     }
 }
