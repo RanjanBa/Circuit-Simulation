@@ -31,6 +31,8 @@ namespace CircuitSimulation.Core
 
             m_allConnectedWires = new List<Wire>();
             InitValidConnectionLookup();
+
+            // _creator.ChipPlacer.finishedPlacingOrLoadingChip
         }
 
         private void AddValidConnection(PinType _a, PinType _b)

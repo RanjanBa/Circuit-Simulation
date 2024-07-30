@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace CircuitSimulation.Core
 {
+    [CreateAssetMenu(menuName = "Circuit/ChipOverrides")]
     public class ChipOverrides : ScriptableObject
     {
         [SerializeField]

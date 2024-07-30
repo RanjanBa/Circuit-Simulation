@@ -30,4 +30,11 @@ namespace CircuitSimulation.Core
         Toggle,
         Never
     }
+
+    public enum PlacementState
+    {
+        PlacingFirstPin,
+        PlacingWire,
+        Finished
+    }
 }

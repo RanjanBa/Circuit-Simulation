@@ -50,4 +50,18 @@ public static class MathUtility
 
         return _start + _t * _dirToPoint;
     }
+
+    public static (bool isIntersect, Vector2 intersectionPoint) LineIntersectLine(Vector2 _p1, Vector2 _p2, Vector2 _q1, Vector2 _q2)
+    {
+        float d = (_p1.x - _p2.x) * (_q1.y - _q2.y) - (_p1.y - _p2.y) * (_q1.x - _q2.x);
+        if (d == 0) // parallel
+        {
+            return (false, Vector2.zero);
+        }
+
+        float n = (_p1.x - _q1.x) * (_q1.y - _q2.y) - (_p1.y - _q1.y) * (_q1.x - _q2.x);
+        float t = n / d;
+        Vector2 intersectionPoint = _p1 + (_p2 - _p1) * t;
+        return (true, intersectionPoint);
+    }
 }

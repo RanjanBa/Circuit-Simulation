@@ -153,8 +153,8 @@ namespace CircuitSimulation.Core
         public override void SetUp(ChipCreator _creator)
         {
             base.SetUp(_creator);
-            m_chipCreator.subChipAdded += OnSubChipAdded;
-            m_chipsToMove = null;
+            _creator.subChipAdded += OnSubChipAdded;
+            _creator = null;
         }
 
         public override bool IsBusy()

@@ -69,4 +69,14 @@ namespace CircuitSimulation.Core
             return string.Equals(name, chipName, System.StringComparison.OrdinalIgnoreCase) && prefab != null;
         }
     }
+
+    public struct DisplayOptions
+    {
+        public enum PinNameDisplayMode { Always, Hover, Toggle, Never }
+        public enum ToggleState { Off, On }
+
+        public PinNameDisplayMode mainChipPinNameDisplayMode;
+        public PinNameDisplayMode subChipPinNameDisplayMode;
+        public ToggleState showCursorGuide;
+    }
 }

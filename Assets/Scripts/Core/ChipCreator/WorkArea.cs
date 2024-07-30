@@ -158,7 +158,7 @@ namespace CircuitSimulation.Core
             SetWidthAndHeight();
         }
 
-        public bool IsOutOfBounds(Bounds _bounds)
+        public bool OutOfBounds(Bounds _bounds)
         {
             Vector2 _min = m_backgroundCollider.bounds.min;
             Vector2 _max = m_backgroundCollider.bounds.max;
@@ -173,7 +173,7 @@ namespace CircuitSimulation.Core
         {
             foreach (Bounds _b in _bounds)
             {
-                if (IsOutOfBounds(_b))
+                if (OutOfBounds(_b))
                 {
                     return true;
                 }
